@@ -1,319 +1,119 @@
-# Google Drive Clone — White-Label Solution by Miracuves
+# Google Drive Clone — White-Label File Sharing & Cloud Storage Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxcloud.mimeld.com)
-[![Solution Page](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/google-drive-clone/)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxtransfer.mimeld.com)
+[![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/google-drive-clone/)
 [![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/google-drive-clone/#pricing)
 [![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
 
+**MXTransfer** is a production-ready, white-label Google Drive clone: a complete file-sharing & cloud-storage platform with upload, share, preview, and admin console — delivered with **100% source code ownership** in **6 working days**.
+
+> 📦 **See it running before you talk to anyone.** Live upload app, web console, and admin dashboard — demo credentials are printed on the [solution page](https://miracuves.com/google-drive-clone#demo). No sales call required.
+
 ---
 
-## Table of Contents
-
-1. [Who Is This For?](#who-is-this-for)
-2. [How It Works](#how-it-works)
-3. [Core Features](#core-features)
-4. [Architecture](#architecture)
-5. [Revenue Streams](#revenue-streams)
-6. [What's Included](#whats-included)
-7. [Deployment Timeline](#deployment-timeline)
-8. [Why Not Build From Scratch?](#why-not-build-from-scratch)
-9. [Market Opportunity](#market-opportunity)
-10. [Client Testimonials](#client-testimonials)
-11. [FAQ](#faq)
-12. [Resources](#resources)
-13. [About Miracuves](#about-miracuves)
-
-## Live Demos
+## 🚀 Live Demos
 
 | Environment | URL | What you can test |
 |---|---|---|
-| Web Platform | [mxcloud.mimeld.com](https://mxcloud.mimeld.com) | Full experience in the browser |
-| Mobile App (Android) | [mas.mimeld.com](https://mas.mimeld.com) | Browse, transact, engage |
-| Admin Dashboard | [Solution page → Demo](https://miracuves.com/google-drive-clone/#demo) | Users, content, plans, analytics |
+| 📱 Mobile App | [mas.mimeld.com](https://mas.mimeld.com) | Upload, share, preview, secure link |
+| 🌐 Web Console | [mxtransfer.mimeld.com](https://mxtransfer.mimeld.com) | Full file management in browser |
+| 📊 Analytics | [Solution page → Demo](https://miracuves.com/google-drive-clone#demo) | File views, geo, downloads |
+| 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/google-drive-clone#demo) | Users, plans, abuse, storage |
 
-Demo credentials: [miracuves.com/google-drive-clone -> Demo section](https://miracuves.com/google-drive-clone/#demo)
-
-## What Makes This Google Drive Clone Different
-
-<!-- TODO: fill 3-5 vertical-specific differentiators -->
-
-## Who Is This For?
-
-| Buyer Type | Use Case |
-|---|---|
-| SaaS Founders | Launch cloud storage platform |
-| Enterprise IT | Build internal file sharing solution |
-| Agencies | White-label storage platform |
+Demo credentials for all environments: **[miracuves.com/google-drive-clone → Demo section](https://miracuves.com/google-drive-clone/#demo)**
 
 ---
 
-## How It Works
+## ✨ What Makes This Google Drive Clone Different
 
-1. User uploads files via web or mobile
-2. Files stored securely with encryption
-3. User shares files with link or direct access
-4. Collaborators access, edit, comment
-5. Admin manages users and storage quotas
+Most file-sharing scripts stop at "upload + share link." This platform ships with the features that actually run a file-sharing *business*:
 
----
+- **Up To 100GB Free Transfers** — large-file transfer with no signup needed — same conversion trick WeTransfer pioneered
+- **Secure Links + Expiry** — 
+- **Preview 200+ File Types** — every share link gets password, expiry, and watermark options — Dropbox Smart Workspace basics
+- **E-Signature Built In** — custom domain, logo, colors on every share page — what agencies need for client work
+- **White-Label Branding** — request signatures on PDFs, track signer progress, audit log — saves a SaaS subscription for clients
 
-## Core Features
+## 📦 Core Features
 
-### User App
-- File upload
-- Folders
-- Share
-- Search
+**User:** upload & preview · secure share links · expiry controls · password protection · folders · search · e-sign · mobile sync
 
-### Admin
-- Storage
-- Users
-- Billing
+**Account:** storage usage analytics · recipient analytics · custom branding on shared pages
 
----
+**Admin:** user management · plans & quotas · storage quotas · abuse takedowns · analytics
 
-## Advanced Features
-
-The platform integrates AI-powered features that reduce manual overhead and capture revenue opportunities:
-
-- **AI File Search** - Full-text search across files
-- **AI Storage Opt** - Archival recommendations
-- **AI Classification** - Auto-tagging
-- **AI Search** - Smart file discovery
-- **AI Organization** - Auto file classification
-
----
-
-## Apps and Web Panels
-
-| Module | Description |
-|---|---|
-| Web Platform | Upload, share, preview |
-| Mobile App | Access, upload, share on the go |
-| Admin Panel | Users, security, billing |
-
----
-
-## Architecture
+## 🏗️ Architecture
 
 ```mermaid
 flowchart LR
-    A[Flutter Apps<br/>Android · iOS] --> G[REST API<br/>Laravel Backend]
-    W[Web Platform<br/>Responsive] --> G
-    P[Partner Panel] --> G
-    AD[Admin Dashboard] --> G
-    G --> DB[(MySQL)]
-    G --> S3[Object Storage]
+    A[Mobile App<br/>Flutter]
+    B[Web Console<br/>Next.js]
+    W[Analytics]
+    AD[Admin Dashboard]
+    A --> G[REST API<br/>Node.js]
+    B --> G
+    W --> G
+    AD --> G
+    G --> DB[(PostgreSQL)]
+    G --> S3[Object Storage<br/>Files]
+    S3 --> CDN[Global CDN]
+    CDN --> B
+    G --> PAY[Stripe]
 ```
 
-**Stack:**
+**Stack:** React/Next.js for web · Flutter mobile · Node.js backend · S3-compatible object storage · Postgres for metadata · Redis for share-link cache · Stripe, regional gateways
 
-| Layer | Technology |
-|---|---|
-| Web | React.js |
-| Mobile | Flutter |
-| Backend | Node.js |
-| Storage | AWS S3 |
+## 📋 What’s Included
 
----
+- ✅ Full source code — backend, web, mobile apps, panels (no encryption, no license locks)
+- ✅ Deployment to your servers & app store submission assistance
+- ✅ Your branding — white-label rename, logo, colors, domain
+- ✅ 60 days post-launch support + 12 months of free updates
+- ✅ Documentation & handover
 
-## Revenue Streams
+**Pricing:** from **$2,799**, transparent on the [solution page](https://miracuves.com/google-drive-clone/#pricing) — no "contact us for quote" games.
 
-The platform is engineered to generate revenue from day one through multiple complementary channels:
+## 🆚 Why Not Build From Scratch?
 
-- Storage subscriptions
-- Enterprise licenses
-- Extra storage add-ons
-- Storage subscription
-- Business plans
-- API access
+Custom file-sharing platforms run $60k–$250k and 4–8 months. A proven white-label base gets you to market in 6 working days for a fraction of that, with your budget preserved for storage margins and integration outreach.
 
----
+## 📚 Resources
 
-## Security and Compliance
+- 📖 [Google Drive Clone — Full Solution Page](https://miracuves.com/google-drive-clone) (features, pricing, demos, FAQ)
+- 💰 [How Much Does a File Sharing App Cost in 2026?](https://miracuves.com/google-drive-clone#pricing) pricing breakdown & what's included
+- 📝 [Best Google Drive Clone Script in 2026](https://miracuves.com/google-drive-clone/blog/) features, pricing & launch guide
+- 🧠 [Large-File Transfers: Conversion to Paid Plans](https://miracuves.com/google-drive-clone/blog/) freemium math, WeTransfer play
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/google-drive-clone/facts/) every claim we make, verified
 
-- OTP-based authentication
-- SSL/TLS encrypted API communication
-- GDPR-ready data handling
+## 🏢 About Miracuves
 
----
+[Miracuves Solutions](https://miracuves.com) builds white-label clone apps and custom software from Mumbai, India — 90+ ready-made solutions, live demos for every product, transparent pricing, and delivery in 6 working days. Operating since 2010.
 
-## What's Included
-
-| Plan | Price | What You Get |
-|---|---|---|
-| Standard | **$2,799** | Complete source code, all apps, admin panel, rebranding, 1 year updates |
-| Enterprise | Custom Quote | Everything in Standard + custom features, multi-region, priority support |
-
-**What is included:**
-
-- Web Platform
-- Mobile App
-- Admin Panel
-- Full Source Code
-- Complete Rebranding (your logo, colors, app name)
-- Server Deployment
-- App Store and Google Play Submission Support
-- 60 Days Free Bug Support
-- Free 1-Year Updates
-
----
-**Pricing:** from **$2,499** — transparent on the [solution page](https://miracuves.com/google-drive-clone/#pricing).
-
-
-## Deployment Timeline
-
-| Day | Milestone |
-|---|---|
-| Day 1 | Server setup, environment configuration, initial deployment |
-| Day 2 | White-labeling - app name, logo, colors, splash screens |
-| Day 3 | Payment gateway integration + third-party API configuration |
-| Day 4 | Custom feature implementation (if applicable) |
-| Day 5 | QA, testing, bug fixes across all panels |
-| Day 6 | App Store + Google Play submission + Go-live |
-
-> **Average go-live: 6 business days from payment confirmation.**
+**Talk to us:** [WhatsApp](https://wa.me/919830009649) · [Schedule a consultation](https://miracuves.com/schedule-consultation/) · [miracuves.com](https://miracuves.com)
 
 ---
 
-## Why Not Build From Scratch?
+### ⚠️ Note on This Repository
 
-| Factor | Build from Scratch | Miracuves Solution |
-|---|---|---|
-| Time to Launch | 6-12 months | 6 days |
-| Development Cost | $60,000-$150,000 | From $2,799 |
-| Source Code Ownership | Yes | Yes |
-| Customization | Full | Full |
-| Post-Launch Support | Depends on team | 60 days included |
-| Risk | High | Low |
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/google-drive-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+
+*Keywords: google drive clone, google drive clone script, file sharing, cloud storage, large file transfer, white label WeTransfer, e-signature, Flutter storage app, Node.js storage*
 
 ---
-
-## Market Opportunity
-
-| Metric | Data |
-|---|---|
-| Cloud Storage (2030) | $376 billion |
-| Key Markets | USA, India, EU |
-
-> Source: Statista, Grand View Research, Allied Market Research
-
----
-
-## Successful Verticals
-
-- Cloud storage SaaS
-- Enterprise file sharing
-- Team collaboration
-- Personal cloud
-- Business storage
-- Enterprise backup
-
----
-
-## Client Testimonials
-
-> *"The S3 sync is flawless. Our enterprise customers love the encryption and access controls."*
-> - CTO, Cloud Storage
-
-> *"Exceptional results from day one."*
-> - Verified Client
-
-> *"Scaled 3x faster than expected."*
-> - Startup Founder
-
----
-
-## FAQ
-
-**How much?**
-$2,799.
-
-**S3 backed?**
-Yes.
-
-**Encryption?**
-Yes, AES-256.
-
-**Source code?**
-Yes.
-
-**Launch?**
-6 days.
-
----
-
-## Related Solutions
-
-Explore our other white-label clone solutions:
-
-- [Dropbox Clone](https://github.com/Miracuves-Solutions/Dropbox-Clone)
-- [Google Drive Clone](https://github.com/Miracuves-Solutions/GoogleDrive-Clone)
-
----
-
-## Resources
-
-- [Full Solution Page](https://miracuves.com/google-drive-clone/) — features, pricing, demos, FAQ
-
-
-## Get Started
-
-**Ready to launch your cloud storage platform?**
-
-| Channel | Link |
-|---|---|
-| Full Solution Page | [miracuves.com/google-drive-clone](https://miracuves.com/google-drive-clone/) |
-| Email | info@miracuves.com |
-| WhatsApp | [+91 98300 09649](https://wa.me/919830009649) |
-| Book a Call | [Free Consultation](https://miracuves.com/contact/) |
-
----
-
-## About Miracuves
-
-**Miracuves Solutions Pvt. Ltd.** is a Mumbai-based software company specializing in white-label clone app solutions across 12+ industries.
-
-- 90+ ready-to-deploy solutions
-- 6-day delivery guarantee
-- 60+ engineers on staff
-- 3,900+ apps delivered
-- Full source code ownership
-- Clients across 40+ countries including India and USA
-
-[Explore all 90+ solutions at miracuves.com](https://miracuves.com)
-
----
-
-## Disclaimer
-
-This product is independently developed by Miracuves. All product names, logos, and brands are property of their respective owners. Use of these names does not imply endorsement.
-
----
-
-<div align="center">
-
-*(c) 2026 Miracuves Solutions Pvt. Ltd. | Mumbai, India*
-*This repository contains product documentation only - no proprietary source code is published here.*
-
-</div>
-
-
-*Keywords: google drive clone, google drive script, white label solution, laravel flutter app, clone script*
-
-
-
----
-
-### Note on This Repository
-
-This repository is a product overview. The full source code is delivered to clients on purchase. For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
-
 
 <!--
-=========================================================
-GENERATED FROM MIRACUVES NETFLIX-CLONE README TEMPLATE
-Canon: 6 working days, from $2,799 floor, 60 days support + 12 months updates.
-Never use 3 days. See https://miracuves.com/facts/ for audited claims.
-=========================================================
+══════════════════════════════════════════════════
+TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
+══════════════════════════════════════════════════
+{APP_NAME}        Google Drive Clone
+{MX_NAME}         MXTransfer
+{CATEGORY}        File Sharing & Cloud Storage Platform
+{DEMO_WEB}        mxtransfer.mimeld.com
+{PRICE}           $2,799
+{SLUG}            google-drive-clone
+{SOLUTION_URL}    https://miracuves.com/google-drive-clone/
+{VERTICAL}        storage
+
+See /tmp/verticals/storage.txt for the vertical config used to generate this README.
+══════════════════════════════════════════════════
 -->
