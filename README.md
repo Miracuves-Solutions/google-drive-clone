@@ -1,11 +1,11 @@
 # Google Drive Clone — White-Label File Sharing & Cloud Storage Platform by Miracuves
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxtransfer.mimeld.com)
+[![Live Demo](https://img.shields.io/badge/Live_Demo-Try_Now-e8344f?style=for-the-badge)](https://mxdemo.mimeld.com)
 [![Website](https://img.shields.io/badge/Solution_Page-miracuves.com-0b0b10?style=for-the-badge)](https://miracuves.com/google-drive-clone/)
-[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/google-drive-clone/#pricing)
-[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/facts/)
+[![Delivery](https://img.shields.io/badge/Go_Live-6_Working_Days-2ecc8f?style=for-the-badge)](https://miracuves.com/google-drive-clone/#features)
+[![Support](https://img.shields.io/badge/Support-60_Days_+_12mo_Updates-blue?style=for-the-badge)](https://miracuves.com/google-drive-clone/#features)
 
-**MXTransfer** is a production-ready, white-label Google Drive clone: a complete file-sharing & cloud-storage platform with upload, share, preview, and admin console — delivered with **100% source code ownership** in **6 working days**.
+**MXDemo** is a production-ready, white-label Google Drive clone: a complete file-sharing & cloud-storage platform with upload, share, preview, and admin console — delivered with **100% source code ownership** in **6 working days**.
 
 > 📦 **See it running before you talk to anyone.** Live upload app, web console, and admin dashboard — demo credentials are printed on the [solution page](https://miracuves.com/google-drive-clone#demo). No sales call required.
 
@@ -16,7 +16,7 @@
 | Environment | URL | What you can test |
 |---|---|---|
 | 📱 Mobile App | [mas.mimeld.com](https://mas.mimeld.com) | Upload, share, preview, secure link |
-| 🌐 Web Console | [mxtransfer.mimeld.com](https://mxtransfer.mimeld.com) | Full file management in browser |
+| 🌐 Web Console | [mxdemo.mimeld.com](https://mxdemo.mimeld.com) | Full file management in browser |
 | 📊 Analytics | [Solution page → Demo](https://miracuves.com/google-drive-clone#demo) | File views, geo, downloads |
 | 🛠️ Admin Dashboard | [Solution page → Demo](https://miracuves.com/google-drive-clone#demo) | Users, plans, abuse, storage |
 
@@ -71,7 +71,7 @@ flowchart LR
 - ✅ 60 days post-launch support + 12 months of free updates
 - ✅ Documentation & handover
 
-**Pricing:** from **$2,499**, transparent on the [solution page](https://miracuves.com/google-drive-clone/#pricing) — no "contact us for quote" games.
+**Pricing:** from **$2,499**, transparent on the [solution page](https://miracuves.com/google-drive-clone/#features) — no "contact us for quote" games.
 
 ## 🆚 Why Not Build From Scratch?
 
@@ -80,10 +80,12 @@ Custom file-sharing platforms run $60k–$250k and 4–8 months. A proven white-
 ## 📚 Resources
 
 - 📖 [Google Drive Clone — Full Solution Page](https://miracuves.com/google-drive-clone) (features, pricing, demos, FAQ)
-- 💰 [How Much Does a File Sharing App Cost in 2026?](https://miracuves.com/google-drive-clone#pricing) pricing breakdown & what's included
-- 📝 [Best Google Drive Clone Script in 2026](https://miracuves.com/google-drive-clone/blog/) features, pricing & launch guide
-- 🧠 [Large-File Transfers: Conversion to Paid Plans](https://miracuves.com/google-drive-clone/blog/) freemium math, WeTransfer play
-- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/google-drive-clone/facts/) every claim we make, verified
+- 💰 [How Much Does a File Sharing App Cost in 2026?](https://miracuves.com/google-drive-clone#features) pricing breakdown & what's included
+- 📝 [Best Google Drive Clone Script in 2026](https://miracuves.com/google-drive-clone#features) features, pricing & launch guide
+- 🧠 [Large-File Transfers: Conversion to Paid Plans](https://miracuves.com/google-drive-clone#features) freemium math, WeTransfer play
+- ✅ [Miracuves Facts & Claims Ledger](https://miracuves.com/google-drive-clone#faq) every claim we make, verified
+- 💻 [Google Drive Clone — Technical Stack](https://miracuves.com/google-drive-clone#techstack) languages, databases, infra, payments, hosting
+- 🔄 [Google Drive Clone — How It Works / User Flow](https://miracuves.com/google-drive-clone#flow) step-by-step product walkthrough
 
 ## 🏢 About Miracuves
 
@@ -95,7 +97,7 @@ Custom file-sharing platforms run $60k–$250k and 4–8 months. A proven white-
 
 ### ⚠️ Note on This Repository
 
-This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/google-drive-clone/#included). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
+This repository is a product overview. The full source code is delivered to clients on purchase — see [what’s included](https://miracuves.com/google-drive-clone/#features). For a hands-on evaluation, use the live demos above; credentials are public on the solution page.
 
 *Keywords: google drive clone, google drive clone script, file sharing, cloud storage, large file transfer, white label WeTransfer, e-signature, Flutter storage app, Node.js storage*
 
@@ -106,9 +108,9 @@ This repository is a product overview. The full source code is delivered to clie
 TEMPLATE VARIABLE KEY — auto-generated from Netflix-Clone pattern
 ══════════════════════════════════════════════════
 {APP_NAME}        Google Drive Clone
-{MX_NAME}         MXTransfer
+{MX_NAME}         MXDemo
 {CATEGORY}        File Sharing & Cloud Storage Platform
-{DEMO_WEB}        mxtransfer.mimeld.com
+{DEMO_WEB}        mxdemo.mimeld.com
 {PRICE}           $2,499
 {SLUG}            google-drive-clone
 {SOLUTION_URL}    https://miracuves.com/google-drive-clone/
